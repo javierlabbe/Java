@@ -16,6 +16,11 @@ public class Funciones1 {
 		
 		String[] arr = {"1","2","3"};
 		metodo5(arr); //no acepta arreglos sin definir
+		
+		System.out.println(retorno1()+1); //esto no es optimo, mejor capturar el dato en una variable para utilizarlo.
+		Integer valorRetornado = retorno1();
+		System.out.println(valorRetornado+35);
+
 
 	}
 	//1. Definicion o estructura de un metodo.
@@ -45,6 +50,15 @@ public class Funciones1 {
 	public static void metodo5(String[] arreglito) {
 		System.out.println("Soy arreglo "+ Arrays.toString(arreglito));
 	}
-
+	//FUNCIONES CON RETORNO
 	
+	/*public static TIPODATO_A_RETORNAR retorno1() {
+		return dato_a_retornar;
+	}
+	*/
+	
+	public static Integer retorno1() {
+		Integer totalAlumnos = 35;
+		return totalAlumnos;
+	}
 }
