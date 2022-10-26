@@ -6,7 +6,7 @@ public class Funciones1 {
 
 	public static void main(String[] args) {
 		// FUNCIONES o Metodos
-		// Metodo Main para gatillar el llamado a otras funciones
+		// Metodo Main para gatillar el llamado a otras funciones. Es la clase principal.
 
 		// LLamado de un metodo
 		nombreMetodo();
@@ -26,6 +26,8 @@ public class Funciones1 {
 
 		String nombreRetornado = obtenerNombreCompleto("Javier", "Labbé", "Soto");
 		System.out.println("El nombre completo es: "+nombreRetornado);
+		
+		llamadaAOtroMetodo();
 
 	}
 
@@ -81,6 +83,13 @@ public class Funciones1 {
 	public static String obtenerNombreCompleto(String nombre, String apePaterno, String apeMaterno) { //Recibe parametro, retorna algo
 		String nombreCompleto = nombre + " " + apePaterno + " " + apeMaterno;
 		return nombreCompleto; // retornamos el contenido de la variable
+	}
+
+	//METODO QUE LLAMA A OTRO METODO
+	
+	public static void llamadaAOtroMetodo() {
+		System.out.println("Llamada a otro metodo desde un metodo");
+		metodo4(1234,3.5F);
 	}
 
 }
