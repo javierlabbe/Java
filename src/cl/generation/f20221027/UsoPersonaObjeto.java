@@ -10,15 +10,6 @@ public class UsoPersonaObjeto {
 		
 	}
 
-	String nombre = "";
-	String apePaterno = "";
-	String apeMaterno = "";
-	String mail = "";
-	Integer telefono = 0;
-	Integer edad = 0;
-	String direccion = "";
-	String nacionalidad = "";
-
 	public static void datos() {
 		Scanner scanner = new Scanner(System.in); // Capturar datos ingresados por el usuario
 		System.out.println("Ingrese nombre");

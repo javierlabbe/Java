@@ -112,7 +112,6 @@ public class TareaAreasPerimetros {
 				}
 			} while (lado == 0);
 			numeros.add(Math.abs(lado));
-			System.out.println(numeros);
 
 			area = Math.PI * Math.pow(numeros.get(0), 2);
 			perimetro = 2 * Math.PI * numeros.get(0);
