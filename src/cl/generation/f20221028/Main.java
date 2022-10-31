@@ -13,6 +13,11 @@ public class Main {
 		 * estudiante.setCorreo("m@m.cl"); estudiante.setCurso("1A");
 		 * System.out.println(estudiante.toString());
 		 */
+		capturarEstudiante();
+		
+	}
+	
+	public static void capturarEstudiante() {
 		Scanner sc = new Scanner(System.in);
 		ArrayList<Estudiante> estudiantes = new ArrayList<Estudiante>(); 
 		int continuar = 2 ;
@@ -50,6 +55,7 @@ public class Main {
 		
 		//accedemos al atributo del estudiante
 		System.out.println(estudiantes.get(0).getNombre());
+		sc.close();
 	}
 
 }
